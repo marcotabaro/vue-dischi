@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: .9rem
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 .wrapper {
     width: 1000px;
     margin: 0 auto;
-    border-bottom: 1px solid black;
+    
 }
 
 header {
@@ -20,8 +21,27 @@ header {
     align-items: center;
     height: 100px;
     text-align: center;
+    border-bottom: 1px solid black;
 }
 
 header > img {
     max-height: 80px;
+}
+
+.wrapperCD {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 30px;
+}
+
+.wrapperCD > div{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 5;
+    background-color: grey;
+}
+
+.wrapperCD > div > img {
+    width: 200px;
+    height: 250px;
 }
