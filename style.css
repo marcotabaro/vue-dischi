@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-image: url('background2.jpg');
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+}
+
+header > img {
+    max-height: 80px;
+}
