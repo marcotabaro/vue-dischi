@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-    width: 1000px;
+    width: 1150px;
     margin: 0 auto;
     
 }
@@ -39,6 +39,9 @@ header > img {
     flex-flow: column wrap;
     flex: 0 0 5;
     background-color: grey;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid black;
 }
 
 .wrapperCD > div > img {
