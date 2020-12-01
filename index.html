@@ -19,16 +19,24 @@
         <header>
             <img src="logo.png" alt="Logo">
         </header>
+        <select v-model="selected">
+            <option disabled value="">Please select a genre</option>
+            <option value='all'>All</option>
+            <option value='rock'>Rock</option>
+            <option value='pop'>Pop</option>
+            <option value='jazz'>Jazz</option>
+            <option value='metal'>Metal</option>
+          </select>
         <div class="wrapperCD" id='root'>
-            <div v-for='album in albums'>
+            <div v-for='album in albums' :class=''>
                 <img :src="album.poster" alt="">
                 <h4>{{album.title}}</h4>
                 <span class="author">{{album.author}}</span>
                 <span class="year">{{album.year}}</span>
+                <!-- <div :class="genre == rock ? 'show' : hide"></div> -->
             </div>
         </div>
     </div>
-
 <script src="script.js"></script>
 </body>
 </html>

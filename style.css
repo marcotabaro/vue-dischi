@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: .9rem
 }
 
 body {
@@ -32,6 +31,8 @@ header > img {
     display: flex;
     flex-flow: row wrap;
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapperCD > div{
@@ -47,4 +48,16 @@ header > img {
 .wrapperCD > div > img {
     width: 200px;
     height: 250px;
+}
+
+.wrapperCD > div:hover {
+    opacity: .5;
+}
+
+.show {
+    display: show;
+}
+
+.hide {
+    display: none;
 }
